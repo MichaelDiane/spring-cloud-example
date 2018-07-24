@@ -1,0 +1,26 @@
+server:
+  port: 8040
+
+spring:
+  application:
+    name: spring-boot-example-gateway
+    
+
+zuul: 
+  ##使得网关在进行转发前为请求设置host头信息，以表识最初的服务端请求地址（非常重要）
+  add-host-header: true 
+  ### * 号忽略所有微服务
+  ignored-services: '*'
+  
+  routes:
+    HELLO-CONSUMER: 
+     path: /h5/*
+     service-id: HELLO-CONSUMER 
+     custom-sensitive-headers: true ###对指定路由开启自定义敏感头
+     sensitive-headers:   ##指定路由的敏感头设置为空
+    
+eureka:
+  client: 
+    service-url: 
+      defaultZone: http://127.0.0.1:8761/eureka/
+      

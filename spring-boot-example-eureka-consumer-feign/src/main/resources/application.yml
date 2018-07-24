@@ -1,0 +1,20 @@
+server:
+  port: 9000
+  
+spring:
+  application:
+    name: spring-boot-example-eureka-consumer-feign
+    
+eureka:
+  client: 
+#    register-with-eureka: false
+#    fetch-registry: false 
+    service-url: 
+      defaultZone: http://127.0.0.1:8761/eureka/   
+##    defaultZone: http://user:user123@localhost:8761/eureka/
+##    defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
+  
+  instance: 
+    prefer-ip-address: true
+ ##   status-page-url-path:  ${management.server.servlet.context-path}/info
+ ##   health-check-url-path: ${management.server.servlet.context-path}/health

@@ -1,0 +1,21 @@
+server:
+  port: 7001 
+  
+spring: 
+  application:
+    name: config-service
+
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/meCat/example-cloud-config.git
+          search-paths: /*
+          username: 394101728@qq.com
+          password: BenQ101728
+      
+
+
+  
+  

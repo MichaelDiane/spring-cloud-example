@@ -1,0 +1,17 @@
+server:
+  port: 7002
+  
+spring: 
+  application:
+    name: config-service
+    
+  cloud: 
+    config:
+      profile: model
+      label: dev
+      uri: http://127.0.0.1:7001/  ##调用参数配置中心属性文件
+     ## uri: file://config/   ##调用本地配置文件
+      fail-fast: true  ##快速检查是否获取配置中心服务正确
+
+  
+  
