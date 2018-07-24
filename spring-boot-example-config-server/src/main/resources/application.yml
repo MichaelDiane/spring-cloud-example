@@ -12,8 +12,8 @@ spring:
         git:
           uri: https://gitee.com/meCat/example-cloud-config.git
           search-paths: /*
-          username: 394101728@qq.com
-          password: BenQ101728
+          username: ******
+          password: ******
       
 
 
