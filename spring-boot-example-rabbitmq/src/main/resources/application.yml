@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: example-stream
+
+  rabbitmq:
+    addresses: 192.168.56.3
+   ##rabbitmq服务不在本地时用addresses链接地址属性链接
+   ## host: 
+    port: 15672
+    username: root
+    password: 123456
